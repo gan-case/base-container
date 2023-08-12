@@ -178,7 +178,7 @@
     # Based on https://github.com/google/jax#pip-installation-gpu-cuda
 
     $PIP_INSTALL "jax[cuda11_cudnn82]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html && \
-    $PIP_INSTALL flax==0.6.3 && \
+    $PIP_INSTALL flax==0.6.2 && \
 
 
 # ==================================================================

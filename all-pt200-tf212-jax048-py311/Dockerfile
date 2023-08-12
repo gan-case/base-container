@@ -184,7 +184,7 @@
     # Based on https://github.com/google/jax#pip-installation-gpu-cuda
 
     $PIP_INSTALL "jax[cuda12_cudnn88]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html && \
-    $PIP_INSTALL flax==0.6.3 && \
+    $PIP_INSTALL flax==0.6.2 && \
 
 
 # ==================================================================
@@ -288,6 +288,6 @@
 # Startup
 # ------------------------------------------------------------------
 
-    EXPOSE 8888 6006
+    EXPOSE 8888 6006 5000
 
     CMD jupyter lab --allow-root --ip=0.0.0.0 --no-browser --ServerApp.trust_xheaders=True --ServerApp.disable_check_xsrf=False --ServerApp.allow_remote_access=True --ServerApp.allow_origin='*' --ServerApp.allow_credentials=True
